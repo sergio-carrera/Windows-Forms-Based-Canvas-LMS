@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAB80174-15FA-41B7-8B3E-290A91C7BB52}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proyecto_GestionAcademica_Grupo05</RootNamespace>
+    <AssemblyName>Proyecto_GestionAcademica_Grupo05</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlesPersonalizados\CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\Cuenta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\Cuenta2.Designer.cs">
+      <DependentUpon>Cuenta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\editarperfilhijoe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\editarperfilhijoe.Designer.cs">
+      <DependentUpon>editarperfilhijoe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\seleccionarfotoe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\seleccionarfotoe.Designer.cs">
+      <DependentUpon>seleccionarfotoe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\eAnuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\eAnuncio.Designer.cs">
+      <DependentUpon>eAnuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\eeAnuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\eeAnuncio.Designer.cs">
+      <DependentUpon>eeAnuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\UC_eAnuncio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\UC_eAnuncio.Designer.cs">
+      <DependentUpon>UC_eAnuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\UC_eAnuncioMostrar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAnuncio\UC_eAnuncioMostrar.Designer.cs">
+      <DependentUpon>UC_eAnuncioMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\MuestraDeAsignacionesEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\MuestraDeAsignacionesEstudiante.Designer.cs">
+      <DependentUpon>MuestraDeAsignacionesEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\ReclamosAsignaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\ReclamosAsignaciones.Designer.cs">
+      <DependentUpon>ReclamosAsignaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\UC_Comentarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\UC_Comentarios.Designer.cs">
+      <DependentUpon>UC_Comentarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\UC_AsignacionCalificaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\UC_AsignacionCalificaciones.Designer.cs">
+      <DependentUpon>UC_AsignacionCalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\UC_AsistenciaCalificaciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\UC_AsistenciaCalificaciones.Designer.cs">
+      <DependentUpon>UC_AsistenciaCalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\VistaCalificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\VistaCalificaciones.Designer.cs">
+      <DependentUpon>VistaCalificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\CreacionDeGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\CreacionDeGrupos.Designer.cs">
+      <DependentUpon>CreacionDeGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\CursoGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\CursoGrupos.Designer.cs">
+      <DependentUpon>CursoGrupos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_Grupo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_Grupo.Designer.cs">
+      <DependentUpon>UC_Grupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_IntegranteGrupo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_IntegranteGrupo.Designer.cs">
+      <DependentUpon>UC_IntegranteGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_PersonaEstudiante.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_PersonaEstudiante.Designer.cs">
+      <DependentUpon>UC_PersonaEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\VistaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\VistaPersona.Designer.cs">
+      <DependentUpon>VistaPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\CursoInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\CursoInicio.Designer.cs">
+      <DependentUpon>CursoInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnModulos\CursoModulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnModulos\CursoModulos.Designer.cs">
+      <DependentUpon>CursoModulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\CursoPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\CursoPersonas.Designer.cs">
+      <DependentUpon>CursoPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\UC_Asignacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\UC_Asignacion.Designer.cs">
+      <DependentUpon>UC_Asignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\VistaYEntregaAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\VistaYEntregaAsignacion.Designer.cs">
+      <DependentUpon>VistaYEntregaAsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_Persona.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\btnPersonas\UC_Persona.Designer.cs">
+      <DependentUpon>UC_Persona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\FotoDePerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\FotoDePerfil.Designer.cs">
+      <DependentUpon>FotoDePerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\SubirFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\SubirFoto.Designer.cs">
+      <DependentUpon>SubirFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\TomarFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\TomarFoto.Designer.cs">
+      <DependentUpon>TomarFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\Cuenta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Cuenta\Cuenta1.Designer.cs">
+      <DependentUpon>Cuenta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\Cursos1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\Cursos1.Designer.cs">
+      <DependentUpon>Cursos1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\UC_Curso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\Curso\UC_Curso.Designer.cs">
+      <DependentUpon>UC_Curso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\MenuPrincipalEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Estudiante\MenuPrincipalEstudiante.designer.cs">
+      <DependentUpon>MenuPrincipalEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\Cuenta1_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\Cuenta1_profesor.Designer.cs">
+      <DependentUpon>Cuenta1_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\Cuenta2_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\Cuenta2_profesor.Designer.cs">
+      <DependentUpon>Cuenta2_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\editarperfilhijop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\editarperfilhijop.Designer.cs">
+      <DependentUpon>editarperfilhijop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\seleccionarfotop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Cuenta_profesor\seleccionarfotop.Designer.cs">
+      <DependentUpon>seleccionarfotop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\AnuncioCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\AnuncioCreate.Designer.cs">
+      <DependentUpon>AnuncioCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\pAnuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\pAnuncio.Designer.cs">
+      <DependentUpon>pAnuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\ppAnuncio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\ppAnuncio.Designer.cs">
+      <DependentUpon>ppAnuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\UC_Anuncio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\UC_Anuncio.Designer.cs">
+      <DependentUpon>UC_Anuncio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\UC_AnuncioMostrar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\UC_AnuncioMostrar.Designer.cs">
+      <DependentUpon>UC_AnuncioMostrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsistencia\PasarAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsistencia\PasarAsistencia.Designer.cs">
+      <DependentUpon>PasarAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsistencia\UC_EstudianteAsistencia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsistencia\UC_EstudianteAsistencia.Designer.cs">
+      <DependentUpon>UC_EstudianteAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnCalificaciones_profesor\CalificarAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnCalificaciones_profesor\CalificarAsignacion.Designer.cs">
+      <DependentUpon>CalificarAsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\CreacionDeAsignaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\CreacionDeAsignaciones.Designer.cs">
+      <DependentUpon>CreacionDeAsignaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\MuestraDeAsignaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\MuestraDeAsignaciones.Designer.cs">
+      <DependentUpon>MuestraDeAsignaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\VistaYCalificacionAsignacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\VistaYCalificacionAsignacion.Designer.cs">
+      <DependentUpon>VistaYCalificacionAsignacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsistencia\CursoAsistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnAsistencia\CursoAsistencia.Designer.cs">
+      <DependentUpon>CursoAsistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnCalificaciones_profesor\MuestraDeCalificacionesProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnCalificaciones_profesor\MuestraDeCalificacionesProfesor.Designer.cs">
+      <DependentUpon>MuestraDeCalificacionesProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\CursoInicioProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\CursoInicioProf.Designer.cs">
+      <DependentUpon>CursoInicioProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnModuos_profesor\CursoModulos_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\btnModuos_profesor\CursoModulos_profesor.Designer.cs">
+      <DependentUpon>CursoModulos_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\Cursos1_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\Cursos1_profesor.Designer.cs">
+      <DependentUpon>Cursos1_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\UC_CursoProf.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\Curso_profesor\UC_CursoProf.Designer.cs">
+      <DependentUpon>UC_CursoProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Profesor\MenuPrincipalProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Profesor\MenuPrincipalProf.Designer.cs">
+      <DependentUpon>MenuPrincipalProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utiles\Logins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utiles\Logins.Designer.cs">
+      <DependentUpon>Logins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Utiles\CuadroInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Utiles\CuadroInput.designer.cs">
+      <DependentUpon>CuadroInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login\LogInEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\LogInEstudiantes.designer.cs">
+      <DependentUpon>LogInEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login\LogInProfesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\LogInProfesores.designer.cs">
+      <DependentUpon>LogInProfesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Formularios\Login\WelcomeS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\WelcomeS.designer.cs">
+      <DependentUpon>WelcomeS.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Estudiante\Cuenta\Cuenta2.resx">
+      <DependentUpon>Cuenta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Cuenta\editarperfilhijoe.resx">
+      <DependentUpon>editarperfilhijoe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Cuenta\seleccionarfotoe.resx">
+      <DependentUpon>seleccionarfotoe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAnuncio\eAnuncio.resx">
+      <DependentUpon>eAnuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAnuncio\eeAnuncio.resx">
+      <DependentUpon>eeAnuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAnuncio\UC_eAnuncio.resx">
+      <DependentUpon>UC_eAnuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAnuncio\UC_eAnuncioMostrar.resx">
+      <DependentUpon>UC_eAnuncioMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\MuestraDeAsignacionesEstudiante.resx">
+      <DependentUpon>MuestraDeAsignacionesEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\ReclamosAsignaciones.resx">
+      <DependentUpon>ReclamosAsignaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\UC_Comentarios.resx">
+      <DependentUpon>UC_Comentarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\UC_AsignacionCalificaciones.resx">
+      <DependentUpon>UC_AsignacionCalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\UC_AsistenciaCalificaciones.resx">
+      <DependentUpon>UC_AsistenciaCalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnCalificaciones_estudiante\VistaCalificaciones.resx">
+      <DependentUpon>VistaCalificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\CreacionDeGrupos.resx">
+      <DependentUpon>CreacionDeGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\CursoGrupos.resx">
+      <DependentUpon>CursoGrupos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\UC_Grupo.resx">
+      <DependentUpon>UC_Grupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\UC_IntegranteGrupo.resx">
+      <DependentUpon>UC_IntegranteGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\UC_PersonaEstudiante.resx">
+      <DependentUpon>UC_PersonaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\VistaPersona.resx">
+      <DependentUpon>VistaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\CursoInicio.resx">
+      <DependentUpon>CursoInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnModulos\CursoModulos.resx">
+      <DependentUpon>CursoModulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\CursoPersonas.resx">
+      <DependentUpon>CursoPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\UC_Asignacion.resx">
+      <DependentUpon>UC_Asignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnAsignaciones_estudiante\VistaYEntregaAsignacion.resx">
+      <DependentUpon>VistaYEntregaAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\btnPersonas\UC_Persona.resx">
+      <DependentUpon>UC_Persona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Cuenta\FotoDePerfil.resx">
+      <DependentUpon>FotoDePerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Cuenta\SubirFoto.resx">
+      <DependentUpon>SubirFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Cuenta\TomarFoto.resx">
+      <DependentUpon>TomarFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Cuenta\Cuenta1.resx">
+      <DependentUpon>Cuenta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\Cursos1.resx">
+      <DependentUpon>Cursos1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\Curso\UC_Curso.resx">
+      <DependentUpon>UC_Curso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Estudiante\MenuPrincipalEstudiante.resx">
+      <DependentUpon>MenuPrincipalEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Cuenta_profesor\Cuenta1_profesor.resx">
+      <DependentUpon>Cuenta1_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Cuenta_profesor\Cuenta2_profesor.resx">
+      <DependentUpon>Cuenta2_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Cuenta_profesor\editarperfilhijop.resx">
+      <DependentUpon>editarperfilhijop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Cuenta_profesor\seleccionarfotop.resx">
+      <DependentUpon>seleccionarfotop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\AnuncioCreate.resx">
+      <DependentUpon>AnuncioCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\pAnuncio.resx">
+      <DependentUpon>pAnuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\ppAnuncio.resx">
+      <DependentUpon>ppAnuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\UC_Anuncio.resx">
+      <DependentUpon>UC_Anuncio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAnuncios_profesor\UC_AnuncioMostrar.resx">
+      <DependentUpon>UC_AnuncioMostrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAsistencia\PasarAsistencia.resx">
+      <DependentUpon>PasarAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAsistencia\UC_EstudianteAsistencia.resx">
+      <DependentUpon>UC_EstudianteAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnCalificaciones_profesor\CalificarAsignacion.resx">
+      <DependentUpon>CalificarAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\CreacionDeAsignaciones.resx">
+      <DependentUpon>CreacionDeAsignaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\MuestraDeAsignaciones.resx">
+      <DependentUpon>MuestraDeAsignaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAsignaciones_profesor\VistaYCalificacionAsignacion.resx">
+      <DependentUpon>VistaYCalificacionAsignacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnAsistencia\CursoAsistencia.resx">
+      <DependentUpon>CursoAsistencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnCalificaciones_profesor\MuestraDeCalificacionesProfesor.resx">
+      <DependentUpon>MuestraDeCalificacionesProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\CursoInicioProf.resx">
+      <DependentUpon>CursoInicioProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\btnModuos_profesor\CursoModulos_profesor.resx">
+      <DependentUpon>CursoModulos_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\Cursos1_profesor.resx">
+      <DependentUpon>Cursos1_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\Curso_profesor\UC_CursoProf.resx">
+      <DependentUpon>UC_CursoProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Profesor\MenuPrincipalProf.resx">
+      <DependentUpon>MenuPrincipalProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utiles\Logins.resx">
+      <DependentUpon>Logins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Utiles\CuadroInput.resx">
+      <DependentUpon>CuadroInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login\LogInEstudiantes.resx">
+      <DependentUpon>LogInEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login\LogInProfesores.resx">
+      <DependentUpon>LogInProfesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Login\WelcomeS.resx">
+      <DependentUpon>WelcomeS.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uc_ausente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarde.png" />
+    <None Include="Resources\presente.png" />
+    <None Include="Resources\noasignado.png" />
+    <None Include="Resources\ausente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uc_presente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uc_sinasignar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UC_tarde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeleccionaImagen.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
